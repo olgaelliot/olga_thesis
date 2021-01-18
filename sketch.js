@@ -8,6 +8,7 @@ ml5 Example
 SketchRNN
 === */
 
+
 // The SketchRNN model
 let model;
 // Start by drawing
@@ -24,8 +25,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 480);
-  background(250);
+  createCanvas(560, 800);
+  background(255);
   stroke(15);
 
   // Button to reset drawing
@@ -43,7 +44,7 @@ function modelReady() {
 
 // Reset the drawing
 function startDrawing() {
-  background(250);
+  background(255);
   // Start in the middle
   x = width / 2;
   y = height / 2;
@@ -74,6 +75,8 @@ function draw() {
     }
   }
 }
+
+
 
 // A new stroke path
 function gotStroke(err, s) {
